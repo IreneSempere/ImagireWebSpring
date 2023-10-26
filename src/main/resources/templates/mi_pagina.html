@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Mi Página Thymeleaf</title>
+</head>
+
+<body>
+	<h1>Bienvenido a mi página Thymeleaf</h1>
+
+	<p>Este es un mensaje dinámico desde el controlador:</p>
+	<p th:text="${mensaje}"></p>
+
+	<script type="text/javascript">
+		function miFuncion() {
+			alert("¡Hola desde JavaScript!");
+		}
+		miFuncion();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!-- *******************************  CABECERA Y NAV ******************************* -->
+<div th:fragment="menu">
+	<div id="container">
+		<header>
+			<div class="cabecera">
+				<a href="index.jsp" class="link_pag"><img src="img/milogo2.png" title="logo imagire" alt="logo" /></a>
+			</div>
+		</header>
+	</div>
+
+	<nav class="menu" aria-label="Site menu">
+		<ul>
+			<a href="/" class="link_pag">
+				<div>
+					<li><i class="fa-solid fa-house"></i> Home</li>
+				</div>
+			</a>
+			<a href="/productos" class="link_pag">
+				<div>
+					<li>Productos</li>
+				</div>
+			</a>
+			<a href="ControladorOfertas" class="link_pag">
+				<div>
+					<li>Ofertas</li>
+				</div>
+			</a>
+			<a href="contacto.jsp" class="link_pag">
+				<div>
+					<li>Contacto</li>
+				</div>
+			</a>
+
+			<!-- You just need to get this field. Start -->
+			<script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
+
+			<div class="search-box">
+				<input class="search-input" type="text" placeholder="Busca aqu&iacute;.." />
+			</div>
+
+
+			<a href="iniciar_sesion.jsp" class="link_pag">
+				<div>
+					<li><i class="fa-solid fa-user"></i></li>
+				</div>
+			</a>
+			<a href="ControladorGestionProductos" class="link_pag">
+				<div>
+					<li><i class="fa-solid fa-lock"></i></li>
+				</div>
+			</a>
+		</ul>
+	</nav>
+
+	<!-- *******************************  MENU HAMBURGUESA ******************************* -->
+
+	<div class="respmenu">
+		<input type="checkbox" />
+		<i class="fas fa-bars"></i>
+		<i class="fas fa-times"></i>
+		<nav  aria-label="Site menu2">
+			<ul>
+				<a href="index.jsp" class="link_pag">
+					<div>
+						<li><i class="fa-solid fa-house"></i> Home</li>
+					</div>
+				</a>
+				<a href="ControladorProductosCliente" class="link_pag" id="fondo_menuA">
+					<div>
+						<li>Productos</li>
+					</div>
+				</a>
+				<a href="ControladorOfertas" class="link_pag">
+					<div>
+						<li>Ofertas</li>
+					</div>
+				</a>
+				<a href="contacto.jsp" class="link_pag">
+					<div>
+						<li>Contacto</li>
+					</div>
+				</a>
+				<a href="iniciar_sesion.jsp" class="link_pag">
+					<div>
+						<li><i class="fa-solid fa-user"></i> Iniciar Sesion</li>
+					</div>
+				</a>
+				<a href="ControladorGestionProductos" class="link_pag">
+					<div>
+						<li><i class="fa-solid fa-lock"></i></li>
+					</div>
+				</a>
+			</ul>
+		</nav>
+	</div>
+
+</div>
